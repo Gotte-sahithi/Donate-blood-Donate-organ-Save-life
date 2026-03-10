@@ -1,0 +1,305 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Blood • Donate Organ • Save Lives</title>
+    <link rel="stylesheet" href="Donatestyle.css">
+    
+</head>
+<body>
+
+<!-- Emergency Modal -->
+<div class="modal-overlay" id="emergModal">
+    <div class="modal">
+        <div class="modal-icon">🚨</div>
+        <h3>Emergency Alert</h3>
+        <p><strong>O− Blood</strong> and <strong>Kidney</strong> are urgently needed.<br>If you are a match, please act immediately.</p>
+        <button class="modal-close" onclick="document.getElementById('emergModal').remove()">I Understand</button>
+    </div>
+</div>
+
+<!-- Hero -->
+<header>
+    <div class="hero-accent"></div>
+    <div class="hero-content">
+        <span class="hero-tag">FWD Mini Project · 2026</span>
+        <h1>Donate Blood<br><em>Save Lives.</em></h1>
+        <p>Every drop you give is a heartbeat you preserve. Your one decision can give life to many.</p>
+        <div class="hero-stats">
+            <div class="hero-stat">
+                <div class="num">3</div>
+                <div class="label">Lives per blood donation</div>
+            </div>
+            <div class="hero-stat">
+                <div class="num">8</div>
+                <div class="label">Lives per organ donation</div>
+            </div>
+            <div class="hero-stat">
+                <div class="num">∞</div>
+                <div class="label">Impact on humanity</div>
+            </div>
+        </div>
+    </div>
+    <div class="scroll-hint">Scroll</div>
+</header>
+
+<!-- Nav -->
+<nav>
+    <a href="#about">About</a>
+    <a href="#donation">Types</a>
+    <a href="#eligibility">Eligibility</a>
+    <a href="#banks">Banks</a>
+    <a href="#emergency">Emergency</a>
+    <a href="#tracking">Tracking</a>
+    <a href="#register">Register</a>
+</nav>
+
+<!-- About -->
+<section id="about">
+    <div class="about-text">
+        <p class="section-label">Why It Matters</p>
+        <h2>Your gift is irreplaceable</h2>
+        <p>Blood and organ donation are among the most profound acts of human generosity. Every day, people need blood during accidents, surgeries, and treatments. Since blood cannot be synthesised, hospitals depend entirely on voluntary donors.</p>
+        <br>
+        <p>For patients in organ failure, a donated kidney, heart, liver, or cornea can mean a second chance at life. By donating, you become part of a chain of compassion that touches countless families.</p>
+    </div>
+    <div class="about-visual">
+        <img src="https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=800" alt="Medical care">
+    </div>
+</section>
+
+<!-- Donation Types -->
+<section id="donation">
+    <p class="section-label">How You Can Help</p>
+    <h2>Types of Donation</h2>
+    <div class="cards-grid">
+        <div class="card blood">
+            <img src="https://images.unsplash.com/photo-1615461066841-6116e61058f4?w=700" alt="Blood Donation">
+            <div class="card-content">
+                <h3>Blood Donation</h3>
+                <ul>
+                    <li>Safe, simple, and quick procedure</li>
+                    <li>One donation saves up to 3 lives</li>
+                    <li>Full recovery within 24–48 hours</li>
+                    <li>Can donate every 3 months</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card organ">
+            <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=700" alt="Organ Donation">
+            <div class="card-content">
+                <h3>Organ Donation</h3>
+                <ul>
+                    <li>Kidney, Liver, Heart, Eyes & more</li>
+                    <li>Living or deceased donation possible</li>
+                    <li>One donor can save 8+ lives</li>
+                    <li>Register your pledge anytime</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Eligibility -->
+<section id="eligibility">
+    <div>
+        <p class="section-label">Before You Donate</p>
+        <h2>Are You Eligible?</h2>
+        <p style="color: var(--muted); font-size: 15px; line-height: 1.8; max-width: 320px;">Basic health criteria ensure safety for both donor and recipient. Contact your nearest blood bank to confirm your eligibility.</p>
+    </div>
+    <div>
+        <div class="elig-list">
+            <div class="elig-item"><span class="icon">🗓</span> Age above 18 years</div>
+            <div class="elig-item"><span class="icon">⚖️</span> Weight above 50 kg</div>
+            <div class="elig-item"><span class="icon">🦠</span> No infectious diseases</div>
+            <div class="elig-item"><span class="icon">💪</span> Medically fit & healthy</div>
+            <div class="elig-item"><span class="icon">💉</span> Haemoglobin ≥ 12.5 g/dL</div>
+            <div class="elig-item"><span class="icon">🕐</span> 3 months since last donation</div>
+        </div>
+    </div>
+</section>
+
+<!-- Blood Banks -->
+<section id="banks">
+    <p class="section-label">Find a Centre</p>
+    <h2>Nearby Blood Banks</h2>
+    <div class="banks-grid">
+        <div class="bank-item">Red Cross Blood Bank – Hyderabad</div>
+        <div class="bank-item">Government Hospital Blood Bank</div>
+        <div class="bank-item">City Care Blood Center – Kukatpally</div>
+        <div class="bank-item">LifeLine Blood Bank – Secunderabad</div>
+    </div>
+</section>
+
+<!-- Compatibility -->
+<section id="compatibility">
+    <p class="section-label">Know Your Type</p>
+    <h2>Blood Group Compatibility</h2>
+    <div class="compat-grid">
+        <div class="compat-badge">
+            <div class="blood-type">O−</div>
+            <div class="desc">Universal Donor</div>
+        </div>
+        <div class="compat-badge">
+            <div class="blood-type">AB+</div>
+            <div class="desc">Universal Receiver</div>
+        </div>
+        <div class="compat-badge">
+            <div class="blood-type">A+</div>
+            <div class="desc">Donates to A+ & AB+</div>
+        </div>
+        <div class="compat-badge">
+            <div class="blood-type">B+</div>
+            <div class="desc">Donates to B+ & AB+</div>
+        </div>
+        <div class="compat-badge">
+            <div class="blood-type">O+</div>
+            <div class="desc">Donates to all + types</div>
+        </div>
+    </div>
+</section>
+
+<!-- Emergency -->
+<section id="emergency">
+    <div class="emergency-inner">
+        <div class="emergency-text">
+            <span class="emergency-tag">🚨 Critical Alert</span>
+            <h2>Emergency Requirement</h2>
+            <div class="emergency-details">
+                <div class="emerg-item">
+                    <strong>O−</strong>
+                    Blood Group Needed
+                </div>
+                <div class="emerg-item">
+                    <strong>Kidney</strong>
+                    Organ Needed
+                </div>
+                <div class="emerg-item">
+                    <strong>Critical</strong>
+                    Immediate Need
+                </div>
+            </div>
+        </div>
+        <button class="emerg-btn" onclick="alert('📞 Please call your nearest hospital immediately!')">Respond Now</button>
+    </div>
+</section>
+
+<!-- Journey + Impact -->
+<div class="journey-section">
+    <p class="section-label">The Process</p>
+    <h2>Your Donation Journey</h2>
+    <div class="journey-steps">
+        <div class="step"><div class="step-num">01</div><div class="step-title">Decide to Donate</div></div>
+        <div class="step"><div class="step-num">02</div><div class="step-title">Medical Check</div></div>
+        <div class="step"><div class="step-num">03</div><div class="step-title">Donate</div></div>
+        <div class="step"><div class="step-num">04</div><div class="step-title">Save Lives</div></div>
+    </div>
+
+    <div class="impact-row" style="margin-top: 60px;">
+        <div class="impact-box">
+            <div class="emoji">🩸</div>
+            <div class="impact-num">3</div>
+            <p>Lives per blood donor</p>
+        </div>
+        <div class="impact-box">
+            <div class="emoji">💚</div>
+            <div class="impact-num">8</div>
+            <p>Lives per organ donor</p>
+        </div>
+        <div class="impact-box">
+            <div class="emoji">🌍</div>
+            <div class="impact-num">∞</div>
+            <p>Impact on humanity</p>
+        </div>
+    </div>
+</div>
+
+<!-- Tracking -->
+<section id="tracking">
+    <p class="section-label">Stay Informed</p>
+    <h2>Donation Tracking</h2>
+    <div class="tracking-card">
+        <div class="form-group">
+            <label for="donationType">Select Donation Type</label>
+            <select id="donationType">
+                <option value="blood">Blood Donation</option>
+                <option value="organ">Organ Donation</option>
+            </select>
+        </div>
+        <button class="track-btn" id="trackBtn">Track Donation</button>
+        <div id="trackingInfo">
+            <p><strong>📍 Current Location:</strong> <span id="currentLocation">–</span></p>
+            <p><strong>⏱ Estimated Arrival:</strong> <span id="eta">–</span></p>
+        </div>
+    </div>
+</section>
+
+<!-- Register -->
+<section id="register">
+    <p class="section-label">Join the Movement</p>
+    <h2>Become a Life Saver</h2>
+    <form class="register-form" id="registerForm">
+        <div class="full">
+            <input type="text" placeholder="Full Name" required>
+        </div>
+        <input type="email" placeholder="Email Address" required>
+        <input type="tel" placeholder="Phone Number">
+        <select>
+            <option value="">Donation Type</option>
+            <option>Blood Donation</option>
+            <option>Organ Donation</option>
+            <option>Both</option>
+        </select>
+        <select>
+            <option value="">Blood Group</option>
+            <option>A+</option><option>A−</option>
+            <option>B+</option><option>B−</option>
+            <option>AB+</option><option>AB−</option>
+            <option>O+</option><option>O−</option>
+        </select>
+        <div class="full">
+            <button type="submit" class="pledge-btn">Pledge to Donate</button>
+        </div>
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 Blood & Organ Donation Initiative &nbsp;|&nbsp; FWD Mini Project &nbsp;|&nbsp; Department of CSE</p>
+</footer>
+
+<script>
+    // Track button
+    document.getElementById('trackBtn').addEventListener('click', function () {
+        const info = document.getElementById('trackingInfo');
+        const loc = document.getElementById('currentLocation');
+        const eta = document.getElementById('eta');
+        const type = document.getElementById('donationType').value;
+
+        info.style.display = 'block';
+        if (type === 'blood') {
+            loc.textContent = 'On the way to Red Cross Blood Bank – Hyderabad';
+            eta.textContent = 'Estimated arrival in 30 minutes';
+        } else {
+            loc.textContent = 'Under medical transport to Government Hospital';
+            eta.textContent = 'Estimated arrival in 2 hours';
+        }
+    });
+
+    // Register form
+    document.getElementById('registerForm').addEventListener('submit', function (e) {
+        e.preventDefault();
+        const overlay = document.createElement('div');
+        overlay.className = 'modal-overlay';
+        overlay.innerHTML = `<div class="modal">
+            <div class="modal-icon">❤️</div>
+            <h3>Thank You!</h3>
+            <p>You have pledged to donate and taken a step towards saving lives. You are a true life saver.</p>
+            <button class="modal-close" onclick="this.closest('.modal-overlay').remove()">Continue</button>
+        </div>`;
+        document.body.appendChild(overlay);
+        this.reset();
+    });
+</script>
+</body>
+</html>
